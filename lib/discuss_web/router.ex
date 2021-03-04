@@ -16,7 +16,7 @@ defmodule DiscussWeb.Router do
   scope "/", DiscussWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    resources "/", TopicController
   end
 
   # Other scopes may use custom stacks.
