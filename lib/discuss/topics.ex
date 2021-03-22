@@ -5,6 +5,7 @@ defmodule Discuss.Topics do
   schema "topics" do
     field :tittle, :string
     belongs_to :user, Discuss.User
+    has_many :comments, Discuss.AddComments
 
     timestamps()
   end
